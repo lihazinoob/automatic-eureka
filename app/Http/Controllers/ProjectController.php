@@ -13,7 +13,8 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        //
+        logger('Index method called'); // Log this in Laravel
+        return inertia("Projects/Index");
     }
 
     /**
